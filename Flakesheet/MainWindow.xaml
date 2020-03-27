@@ -3,10 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Flakesheet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Flakesheet"
+        Height="250" Width="500"
+        ResizeMode="NoResize">
     <Grid>
+        <StackPanel Orientation="Horizontal" Margin="20,30" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Content="Select tiles folder" Height="25" Width="150" Click="TileButton_Click"/>
+            <Label x:Name="TileLabel" Content="" Margin="5,0"/>
+        </StackPanel>
         
+        <StackPanel Orientation="Horizontal" Margin="20,90" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Content="Select destination folder" Height="25" Width="150" Click="DestinationButton_Click"/>
+            <Label x:Name="DestinationLabel" Content="" Margin="5,0"/>
+        </StackPanel>
+
+        <Button Content="Start" Margin="0,20" VerticalAlignment="Bottom" Height="40" Width="150" Click="StartButton_Click" />
     </Grid>
 </Window>
